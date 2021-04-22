@@ -1,4 +1,4 @@
-### Restaurant List App
+# Restaurant List App
 
 Form component that takes a foursquare api ID, secret and search term and returns a list of venues
 
@@ -13,7 +13,7 @@ run the test with 'npm run test'
 
 Styling is done using Sass. I've also used MiniCssExtractPlugin to break the styling out into its own css file rather than being bundled into the javascript bundle.
 
-# Next Steps
+### Next Steps
 
 More test coverage
 
