@@ -5,7 +5,7 @@ import { IVenues } from '../types';
 // the function checks the search term in local storage and will returned a cached repsonse if it exists
 // if not it will fetch the values from the api endpoint
 // on receiving the value it will cache them
-const getRestaurants = (cache: Cache) =>  async (CLIENT_ID="JBOYS3EORSEVS1JAK30OQSPJFGWXIRUNG5RC4RE1PV10VAX2", CLIENT_SECRET="IXB5ODZXM2ZO2CABHZUFZ5FNYN3ED5TOXEPOMD4PL23X5V3G", venueName="burger"): Promise<Array<IVenues>> => {
+const getRestaurants = (cache: Cache) =>  async (CLIENT_ID: string, CLIENT_SECRET: string, venueName: string): Promise<Array<IVenues>> => {
     const cacheResponse = cache.getRequest(venueName);
     if(cacheResponse) {
         return cacheResponse;
