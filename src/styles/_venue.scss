@@ -1,0 +1,47 @@
+// Styling for individual Venue components
+// BEM naming convention used
+.venue {
+    &__display {
+        background-color: $light-blue;
+        border-radius: $spacing/2;
+        cursor: pointer;
+        margin: $spacing 0;
+        padding: $spacing;
+        text-transform: uppercase;
+    }
+
+    &__category {
+        background-color: $dark-blue;
+        border-radius: 20px;
+        color: $white;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        margin: $spacing/2 $spacing/2 0 0;
+        padding: $spacing/2 12px;
+        text-transform: uppercase;
+    }
+
+    &__dropdown {
+        height: 20px;
+        float: right;
+        position: relative;
+        width: 20px;
+    }
+
+    &__label {
+        color: $dark-blue;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__address {
+        margin-top: $spacing;
+
+        &-line {
+            font-size: 14px;
+            margin: $spacing/2 $spacing;
+        }
+    }
+}

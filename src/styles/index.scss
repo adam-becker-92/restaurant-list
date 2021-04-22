@@ -1,0 +1,36 @@
+// Colours
+$dark-blue: #424277;
+$white: #ffffff;
+$light-blue: #efefff;
+
+// Spacing
+$spacing: 1em;
+
+//Open Sans font from google fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+$open-sans: 'Open Sans', sans-serif;
+
+button,
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    font-family: $open-sans;
+}
+
+.header {
+    color: $dark-blue;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+@import './form';
+@import './venue';
