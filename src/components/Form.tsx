@@ -8,14 +8,14 @@ interface IProps {
 }
 
 interface IFormValues {
-    clientId?: string
-    clientSecret?: string
-    restaurant?: string
+    clientId: string
+    clientSecret: string
+    restaurant: string
 }
 
 // form component that initialises the cache, takes the form values and makes the api request on submit
 const form = ({ updateRestaurants }: IProps): React.ReactElement => {
-    const [values, setValues]= useState<IFormValues>({});
+    const [values, setValues]= useState<IFormValues>({ clientId: '', clientSecret: '', restaurant: '' });
 
     // Cache initialised in the state of the function
     const [cache, setCache]= useState<Cache>(new Cache());
