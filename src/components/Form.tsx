@@ -17,7 +17,7 @@ interface IFormValues {
 const form = ({ updateRestaurants }: IProps): React.ReactElement => {
     const [values, setValues]= useState<IFormValues>({ clientId: '', clientSecret: '', restaurant: '' });
 
-    // Cache initialised in the state of the function
+    // Cache initialised in this  useState hook
     const [cache, setCache]= useState<Cache>(new Cache());
 
     // function makes api call on submit
