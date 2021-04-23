@@ -9,6 +9,7 @@ There is front end caching that is built using local storage. There is a class i
 Testing is done using jest, unfortunately I didn't have enough time to do full test coverage so I've only covered tests for the caching class.
 
 start up the dev server with 'npm run start:dev', the project will be visible at localhost:9000
+
 run the test with 'npm run test'
 
 Styling is done using Sass. I've also used MiniCssExtractPlugin to break the styling out into its own css file rather than being bundled into the javascript bundle.
